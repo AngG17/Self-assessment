@@ -28,3 +28,8 @@ The one piece of advice I would have for groups is to have one person keep you o
 
 ## Summary of Project
 
+Our group decided to to build a machine learning model that would help us improve our predictions for which basketball team would win during a March Madness matchup.  We first had to find which statistics were most important whan predicting a game winner.  
+
+For our model, we used train_test_split from sci-kit learn to create a Balanced Random Forest model. Our balanced accuracy score was 0.62.  We used the difference of each statistic for the two teams in our model and shooting effectiveness (using a special formula to compare two versus three point shots), free throw success, rankings, assists, and offensive rebounds were the top five most important features.
+
+We ran the model once for each hypothetical matchup for all of the teams that made the 2022 tournament, then built a bracket based on which team our model determined would be most likely to win the game. For 2022, our model picked 4th-seeded Arkansas, 7th-seeded Murray, 9th-seeded TCU, and 6th-seeded LSU as the Final Four, with LSU beating Murray in the championship.
